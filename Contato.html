@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Washington Camizato Costa</title>
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            background-color: #e0f7fa; /* Cor de fundo azul claro */
+            color: #333; /* Cor do texto */
+            padding: 20px;
+        }
+        /* Estilo para o menu de navegação */
+        .menu {
+            background-color: #0277bd; /* Cor de fundo azul médio */
+            overflow: hidden; /* Evita que o conteúdo transborde */
+            display: flex; /* Flexbox para alinhar os itens */
+            justify-content: center; /* Centraliza os itens do menu */
+        }
+        .menu ul {
+            list-style-type: none; /* Remove marcadores de lista */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Exibe os itens em linha */
+        }
+        .menu ul li {
+            display: inline; /* Exibe os itens do menu em linha */
+        }
+        .menu ul li a {
+            display: block; /* Permite definir altura e largura */
+            color: white; /* Cor do texto */
+            text-align: center; /* Centraliza o texto */
+            padding: 14px 20px; /* Espaçamento interno */
+            text-decoration: none; /* Remove sublinhado do link */
+            background-color: #0288d1; /* Cor de fundo azul */
+            border: 1px solid #01579b; /* Borda azul escura */
+            margin: 0 5px; /* Espaçamento entre os itens do menu */
+            transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+        }
+        .menu ul li a:hover {
+            background-color: #03a9f4; /* Cor de fundo ao passar o mouse */
+        }
+        /* Estilo para o formulário de contato */
+        form {
+            display: flex;
+            flex-direction: column; /* Organiza os elementos verticalmente */
+            width: 400px; /* Largura do formulário */
+            margin: 0 auto; /* Centraliza o formulário */
+            padding: 20px;
+            background: white; /* Fundo branco para o formulário */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        fieldset {
+            border: none; /* Remove a borda padrão do fieldset */
+            margin-bottom: 20px; /* Espaçamento abaixo do fieldset */
+        }
+        legend {
+            font-weight: bold; /* Negrito para o título do fieldset */
+            margin-bottom: 10px; /* Espaçamento abaixo do legend */
+        }
+        label {
+            display: block; /* Exibe o rótulo como bloco */
+            margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+        }
+        input, textarea {
+            width: 100%; /* Largura total do campo de entrada */
+            padding: 10px; /* Espaçamento interno */
+            margin-bottom: 15px; /* Espaçamento abaixo do campo */
+            border: 1px solid #ccc; /* Borda cinza clara */
+            border-radius: 3px; /* Bordas arredondadas */
+        }
+        /* Estilo para o botão de envio */
+        button {
+            background-color: #007bff; /* Cor de fundo azul */
+            color: #fff; /* Cor do texto branca */
+            border: none; /* Remove borda padrão */
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 3px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de mão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <nav class="menu">
+        <ul>
+            <li><a href="Index.html">Sobre Mim</a></li>
+            <li><a href="Portfolio.html">Portfólio</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="Formacao.html">Formação e Experiência</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título da página -->
+    <h1>Deixe seu Recado</h1>
+
+    <!-- Formulário de contato -->
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
